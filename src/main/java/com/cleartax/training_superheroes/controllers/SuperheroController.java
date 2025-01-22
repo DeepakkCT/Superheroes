@@ -14,16 +14,16 @@ public class SuperheroController {
     @Autowired
     private SuperheroService superheroService;
 
-    @GetMapping("/get")
+    @GetMapping("/get/{id}")
     public Superhero getSuperhero(@PathVariable String id) {
 
         return superheroService.getSuperhero(id);
     }
 
-    @DeleteMapping("/delete")
-    public void deleteSuperhero(@PathVariable String name) {
+    @DeleteMapping("/delete/{id}")
+    public void deleteSuperhero(@PathVariable String id) {
 
-         superheroService.deleteSuperhero(name);
+         superheroService.deleteSuperhero(id);
 
     }
 

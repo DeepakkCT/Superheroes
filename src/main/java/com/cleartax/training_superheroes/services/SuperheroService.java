@@ -22,7 +22,7 @@ public class SuperheroService {
         return superheroRepository.save(superhero);
     }
 
-    public void deleteSuperhero(String id ){
+    public void deleteSuperhero(String id){
         superheroRepository.deleteById(id);
     }
 
